@@ -3,158 +3,196 @@
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  -webkit-animation-name: fadeIn; /* Fade in the background */
-  -webkit-animation-duration: 0.4s;
-  animation-name: fadeIn;
-  animation-duration: 0.4s
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
 }
 
 /* Modal Content */
 .modal-content {
-  position: fixed;
-  bottom: 0;
-  background-color: #fefefe;
-  width: 100%;
-  -webkit-animation-name: slideIn;
-  -webkit-animation-duration: 0.4s;
-  animation-name: slideIn;
-  animation-duration: 0.4s
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
 }
 
 /* The Close Button */
 .close {
-  color: white;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .modal-header {
-  padding: 2px 16px;
-  background-color: #7B7B7B;
-  color: white;
+    padding: 2px 16px;
+    background-color: #7B7B7B;
+    color: white;
 }
 
-.modal-body {padding: 2px 16px;}
+.modal-body {
+    padding: 2px 16px;
+}
 
 .modal-footer {
-  padding: 2px 16px;
-  background-color: #7B7B7B;
-  color: white;
+    padding: 2px 16px;
+    background-color: #7B7B7B;
+    color: white;
 }
 
 /* Add Animation */
 @-webkit-keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @keyframes slideIn {
-  from {bottom: -300px; opacity: 0}
-  to {bottom: 0; opacity: 1}
+    from {
+        bottom: -300px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @-webkit-keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .button {
-  -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
-  display: block;
-  margin: 20px auto;
-  max-width: 180px;
-  text-decoration: none;
-  border-radius: 4px;
-  padding: 20px 30px;
-  color: rgba(30, 22, 54, 0.6);
-  box-shadow: rgba(55, 55, 55, 0.4) 0 0px 0px 2px inset;
-  font-family: Arial, sans-serif;
-  font-weight: bold;
-  font-size: 16px;
+    -webkit-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -moz-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -ms-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    -o-transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    display: block;
+    margin: 20px auto;
+    max-width: 180px;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 20px 30px;
+    color: rgba(30, 22, 54, 0.6);
+    box-shadow: rgba(55, 55, 55, 0.4) 0 0px 0px 2px inset;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 #introBtn {
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .button:hover {
-  color: rgba(255, 255, 255, 0.85);
-  box-shadow: rgba(55, 55, 55, 0.7) 0 0px 0px 40px inset;
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: rgba(55, 55, 55, 0.7) 0 0px 0px 40px inset;
 }
 
 #nextBtn {
-  text-align: right;
-  font-family: 'Open Sans', sans-serif;
+    text-align: right;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #logo {
-  font-family: 'Open Sans', sans-serif;
-  color: #555;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 120px;
-  font-weight: 800;
-  letter-spacing: -3px;
-  line-height: 1;
-  text-shadow: #EDEDED 3px 2px 0;
-  position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 120px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #EDEDED 3px 2px 0;
+    position: relative;
 }
+
 #logo:after {
-  content:"Crimes in the City of Chicago";
-  position: absolute;
-  left: 4px;
-  top: 8px;
+    content: "Crimes in the City of Chicago";
+    position: absolute;
+    left: 4px;
+    top: 8px;
 }
+
 #logo:after {
-  /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
-  background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
-  background-size: 4px 4px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  z-index: -5;
-  display: block;
-  text-shadow: none;
+    /*background: url(https://subtlepatterns.com/patterns/crossed_stripes.png) repeat;*/
+    background-image: -webkit-linear-gradient(left top, transparent 0%, transparent 25%, #555 25%, #555 50%, transparent 50%, transparent 75%, #555 75%);
+    background-size: 4px 4px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -5;
+    display: block;
+    text-shadow: none;
 }
 
 #abstract {
-  font-family: Papyrus;
-  color: #555;
-  text-decoration: none;
-  font-size: 32px;
-  text-shadow: #EDEDED 5px 4px 0;
-  position: relative;
-  word-spacing: 4px;
+    font-family: Papyrus;
+    color: #555;
+    text-decoration: none;
+    font-size: 32px;
+    text-shadow: #EDEDED 5px 4px 0;
+    position: relative;
+    word-spacing: 4px;
+}
+
+path {
+    stroke: #555555;
+    stroke-width: 2px;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
 }
 
 body {
-  padding: 20px 80px;
-  background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
+    padding: 20px 80px;
+    background: #eee url(https://subtlepatterns.com/patterns/extra_clean_paper.png);
 }
