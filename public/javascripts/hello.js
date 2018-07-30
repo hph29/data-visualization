@@ -2,7 +2,7 @@ if (window.console) {
     console.log("Welcome to your Play application's JavaScript!");
 }
 
-var introArray = ["Welcome To Statistical Bureau, as your guide, I am are going to present the crimes conducted in the City of Chicago from 2012 to 2017.",
+var introArray = ["Welcome To Statistical Bureau, as your guide, I am going to present the crimes conducted in the City of Chicago from 2012 to 2017.",
     "1/6. Total of 1456714 crimes had been conducted from the last 5 years.",
     "2/6 Among all of 30 types of crimes, Thefts are the most common type of crime, it has been conducted 329460 and contributes 22% of all crimes followed by Battery and Public Damage.",
     "3/6 Human trafficking crimes are the least common, it has been conducted 28 times from the last 5 years, followed by narcotic violation and public indecency.",
