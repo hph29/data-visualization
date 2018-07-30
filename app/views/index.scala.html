@@ -8,14 +8,14 @@
 
     <button id="introBtn" class="button">Introduction</button>
 
-    <div id="myModal" class="modal">
+    <div id="myModal" class="modal", style="text-align:center; font-family: Papyrus; font-size: 32px; color: dimgray">
         <div class="modal-content">
             <div class="modal-header">
                 <span class="close">&times;</span>
-                <h2>Introduction</h2>
+                <h2 id="title" style="font-size: 64px; font-weight: bolder">Introduction</h2>
             </div>
             <div class="modal-body">
-                <p id = "intro-text">p1</p>
+                <p id = "intro-text">Welcome To Statistical Bureau, as your guide, I am are going to present the crimes conducted in the City of Chicago from 2012 to 2017.</p>
             </div>
             <div class="modal-footer">
                 <button id="nextBtn" class="button">Next</button>
@@ -23,7 +23,21 @@
         </div>
     </div>
 
-
-    <script src="@routes.Assets.at("javascripts/hello.js")"></script>
+    <hr>
+    <hr>
+    <hr>
+    <p id="trendChart">Crime Conducted Monthly</p>
     <script src="@routes.Assets.at("javascripts/trendline.js")"></script>
+
+    <hr>
+    <hr>
+    <div id="pieChart"></div>
+    <hr>
+    <hr>
+    <div id="pieChart2"></div>
+    <script src="@routes.Assets.at("javascripts/piechart.js")"></script>
+
+    <button id="aboutBtn" class="button">About the Visualization</button>
+    <script src="@routes.Assets.at("javascripts/hello.js")"></script>
+
 }

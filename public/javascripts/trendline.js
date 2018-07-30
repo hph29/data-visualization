@@ -35,11 +35,9 @@ function drawTrendLine() {
     var svg = d3.select("body")
         .append("div")
         .style("text-align", "center")
-        .append("text")
-        .style("font-size", "20px")
+        .style("font-size", "18px")
         .style("font-family", "Papyrus")
         .style("text-decoration", "underline")
-        .text("Crime Conducted Monthly")
         .append("svg")
         .attr("width", width + margin.left + margin.right)
         .attr("height", height + margin.top + margin.bottom)
@@ -202,24 +200,38 @@ function drawTrendLine() {
 
     var annotations = [
         {
-            "cx": 625,
-            "cy": 111,
-            "r": 109,
-            "text": "The longer Old Faithful lays dormant, the longer the eruption last",
+            "cx": 55,
+            "cy": 3,
+            "r": 10,
+            "text": "Historical highest point at Jul, 2012",
             "textWidth": 140,
             "textOffset": [
-                121,
-                186
+                15,
+                120
+            ]
+        },
+        {
+            "cx": 363,
+            "cy": 111,
+            "r": 10,
+            "text": "Historical lowest point at Feb, 2015",
+            "textWidth": 140,
+            "textOffset": [
+                30,
+                30
             ]
         }
     ];
 
     var ringNote = d3.ringNote()
-        .draggable(false);
+        .draggable(true);
 
     svg.append("g")
         .attr("class", "annotations")
-        .call(ringNote, annotations);
+        .style("font-size","20px")
+        .call(ringNote, annotations)
+        .selectAll(".annotation circle")
+        .style("fill", "none");
 
 }
 
